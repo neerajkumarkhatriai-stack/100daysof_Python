@@ -1,0 +1,123 @@
+# Data Types
+print("Hello"[0:2]) #in this we can print the first 2 letters of the word
+print("Hello"[-1]) #this will print the last letter of the word
+#String +
+
+print("123" + "456") #this will just concatenate the strings 123456
+
+#Integer = whole number
+print(123+456)
+print(123_456_789) # when we write large number we write comma and in python we can use underscore with comma
+
+#Float (floating point number)
+#1.2356 |  1235.6
+
+#Boolena
+#True
+#False
+
+print(True)
+
+
+________________________________________
+
+#how to check the datatype
+
+print(type("Hello"))    # <class 'str'>
+print(type(123)) #<class 'int'>
+print(type(123.456)) # <class 'float'>
+print(type(True)) # <class 'bool'>
+
+# Type Conversion of the datatype
+ 
+int("123")
+print(type(int("123"))) # <class 'int'>
+print(int(123)+int(456)) # 579
+
+print(int(abc)) # name 'abc' is not defined. Did you mean: 'abs'? Or did you forget to import 'abc
+
+
+print("number of letters in your name:" + str(len(input("Enter your name\n"))))
+
+#Output
+#Enter your name
+#Neeraj
+#number of letters in your name:6
+
+# mathematical operations
+
+print(123+456) #579
+print(7-3) #4
+print(3*2) #6
+print(6/3) #2.0 this will give a floating number as default behavior
+print(6//3) #2 this will remove all the number after decimal
+print(2**2) # this is 2 to the power of 2 and output will be 4
+print(2**3) #8
+
+--------------------------------
+
+# #PENDAS LR
+# ()
+# **
+# *
+# /
+# +
+# -
+# you can comments multiple line using ctr + / select thelines and press this
+print(3*3+3/3-3)
+
+print(3*3+3/3-3) # 7.0
+
+1+9-3
+
+
+--------------------- if statement ----------------------------
+
+BMI Calculator with Interpretations
+Add some if/elif/else statements to the BMI calculator so that it interprets the BMI values calculated.
+
+If the bmi is under 18.5 (not including), print out "underweight"
+
+If the bmi is between 18.5 (including) and 25 (not including), print out "normal weight"
+
+If the bmi is 25 (including) or over, print out "overweight"
+
+weight = 85
+height = 1.85
+
+bmi = rount(weight / (height ** 2),2) # 24.835646457268076
+print(bmi)
+if bmi > 18.2:
+    print("underweight")
+elif bmi >= 18.5 & bmi <=25:
+    print("normal weight")
+elif bmi >=25:
+    print("Overweight")
+
+
+
+score=5
+score+=1 # this is short hand for score = score +1
+print(score)
+score-=1
+print(score)
+score*=1
+print(score)
+score/=1
+print(score)
+
+
+score =0
+height=1.8
+is_winning= True
+
+print(f"Your score is = {score}, your height is {height}. You are winning is {is_winning}") #fstring- in this we use variable ins {} within the string
+
+Tip Calculator project
+
+print("Welcome to the tip calculator!\n")
+total_bill = round(float(input("What was the total bill? $")),2)
+tip = int(input("How much tip would you liketo give? 10, 12, or 15?:"))
+total_people = int(input("How many people to split the bill? "))
+pay_per_person=round((total_bill+(total_bill*(tip/100)))/total_people, 2)
+print(f"Each person should pay: ${pay_per_person}")
