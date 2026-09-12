@@ -1,0 +1,8 @@
+# Random Numbers using list 
+import random # which contain all the code to generate random numbers
+random_integer = random.randint(1,10) # this will give random number that include 1 to 10 any number
+print(random_integer)
+
+#module 
+# if you are writing a big code then you split the code in modules, in this you will build the software 
+in multiple steps or modules, Random is also one module, a pice of code in python that give random number 
