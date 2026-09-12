@@ -19,3 +19,24 @@ if coin == 1:
   print("It's head")
 else:
   print("It's tail")
+
+# List - it a Suare breket that have mutiple items in it 
+indian_states = ["Andhra Pradesh", "Arunachal Pradesh", "Assam",    "Bihar",    "Chhattisgarh",    "Goa",    "Gujarat",    "Haryana",    "Himachal Pradesh",    "Jharkhand",    "Karnataka",    "Kerala",    "Madhya Pradesh",    "Maharashtra",    "Manipur",    "Meghalaya",    "Mizoram",
+    "Nagaland",    "Odisha",    "Punjab",    "Rajasthan",    "Sikkim",
+    "Tamil Nadu",    "Telangana",    "Tripura",    "Uttar Pradesh",
+    "Uttarakhand",    "West Bengal"]
+#in this list "Andhra Pradesh" index number is 0 means this list iteam starts with 0 and go on and on 
+# we can also use the negative number like -1, this means it will give the last item of the list, and if you want multiple items you can use 0:5 means it will iteam 1 to 6 of the list
+print(indian_states[-1])
+indian_states[-1] = "WB" # this how we can modified the list and change the iteam within the list
+print(indian_states[-1]) # now it will give the updated item 
+indian_states.append("Neeraj Pradesh") # this will add an iteam in last of the list 
+print(indian_states[-1])
+
+
+# printing random names from the list
+import random
+friends =["Alice", "Bob", "Charlie", "David", "Emanuel"]
+# iteam =  random.choice(friends)
+iteam =  random.randint(0,4)
+print(friends[iteam])
