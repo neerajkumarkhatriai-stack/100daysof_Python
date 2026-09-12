@@ -6,3 +6,16 @@ print(random_integer)
 #module 
 # if you are writing a big code then you split the code in modules, in this you will build the software 
 in multiple steps or modules, Random is also one module, a pice of code in python that give random number 
+
+import random
+radndom_number_0_to_1 = random.random() # this will not take any argumet and it will give number between 0 to 1 in floting point number
+print(radndom_number_0_to_1)
+
+# Head and Tail simple coin-flip program
+import random
+print("Let's flip the coin and see who wins")
+coin = random.randint(1,2)
+if coin == 1:
+  print("It's head")
+else:
+  print("It's tail")
