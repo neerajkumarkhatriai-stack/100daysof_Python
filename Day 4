@@ -40,3 +40,35 @@ friends =["Alice", "Bob", "Charlie", "David", "Emanuel"]
 # iteam =  random.choice(friends)
 iteam =  random.randint(0,4)
 print(friends[iteam])
+
+___________________ R P S Game ------------------------------------
+
+# Rock beats Scissors
+# Scissors beats Paper
+# Paper beats Rock
+import random
+rock = 0
+paper =1
+scissors = 2 
+rps=[rock, paper,scissors]
+computer_choice = random.choice(rps)
+player_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors: "))
+print(computer_choice)
+if computer_choice == player_choice:
+  print("It is a Draw, try again")
+elif player_choice == 0 and computer_choice == 1: # u- rock $ c - paper
+  print("compuer wins")
+elif player_choice == 0 and computer_choice == 2: # u- rock & c - scissors
+  print("Player wins")
+elif player_choice == 1 and computer_choice == 0: # u - paper & c - rock
+  print("Player wins")
+elif player_choice == 1 and computer_choice == 2: # u - paper & c- scissors
+  print("compuer wins")
+elif player_choice == 2 and computer_choice == 0: # u- scissors & c- rock
+  print("compuer wins")
+elif player_choice == 2 and computer_choice == 1: # u- scissors & c- paper
+  print("Player wins")
+elif player_choice not in rps:
+    print("Invalid choice")
+  
+
