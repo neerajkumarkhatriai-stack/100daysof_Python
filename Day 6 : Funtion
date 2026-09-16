@@ -1,0 +1,12 @@
+# Funtion 
+print("Hello")
+num_char = len("Hello")
+print(num_char)
+
+# how to create your own funtion 
+def my_funtion(): # my_funtion is the funtion name
+  print("Hello")
+  print("Bye")
+
+# Call the funtion
+my_funtion() # now funtion will be called and it will preform the funtion task
