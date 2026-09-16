@@ -12,12 +12,12 @@ def my_funtion(): # my_funtion is the funtion name
 my_funtion() # now funtion will be called and it will preform the funtion task
 
 # https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201&url=worlds%2Ftutorial_en%2Fhurdle1.json
-
+#Funtion to turn right is created
 def turn_right():
     turn_left()
     turn_left()
     turn_left()
-
+# Funtion to complete on cycel is created below
 def one_cycle():
     move()
     turn_left()
@@ -27,7 +27,7 @@ def one_cycle():
     turn_right()
     move()
     turn_left()
-
+# Loop is created to run the above two funtions 6 time which complete the race is below
 for rob in range (6):
     one_cycle()
 
